@@ -1,0 +1,36 @@
+<svg width="53" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="a" x1="31.572" y1="37.761" x2="41.767" y2="37.761" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+        <linearGradient id="b" x1="35.05" y1="27" x2="43" y2="27" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+        <linearGradient id="c" x1="31.565" y1="16.239" x2="41.761" y2="16.239" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+        <linearGradient id="d" x1="21.292" y1="38.097" x2="32.714" y2="38.097" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+        <linearGradient id="e" x1="20.808" y1="27" x2="33.192" y2="27" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+        <linearGradient id="f" x1="21.292" y1="15.903" x2="32.714" y2="15.903" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E52D27"/>
+            <stop offset="1" stop-color="#B31217"/>
+        </linearGradient>
+    </defs>
+      <path d="M31.572 42.33a16.052 16.052 0 0 0 10.195-9.136h-6.969c-.568 3.67-1.652 6.954-3.226 9.135Z" fill="url(#a)"/>
+    <path d="M42.452 22.871H35.05c.136 1.355.213 2.742.213 4.13 0 1.386-.078 2.773-.213 4.128h7.395A15.86 15.86 0 0 0 43 27c0-1.432-.2-2.806-.548-4.129Z" fill="url(#b)"/>
+    <path d="M41.761 20.807a16.036 16.036 0 0 0-10.196-9.136c1.575 2.18 2.659 5.465 3.227 9.136h6.969Z" fill="url(#c)"/>
+    <path d="M21.292 33.194c.936 5.76 3.143 9.806 5.711 9.806 2.568 0 4.775-4.045 5.711-9.806H21.292Z" fill="url(#d)"/>
+    <path d="M20.808 27c0 1.432.078 2.806.213 4.129H32.98c.135-1.323.213-2.697.213-4.129 0-1.432-.078-2.806-.213-4.129H21.02A40.433 40.433 0 0 0 20.808 27Z" fill="url(#e)"/>
+    <path d="M32.714 20.806c-.936-5.76-3.142-9.806-5.71-9.806-2.569 0-4.776 4.045-5.712 9.806h11.422Z" fill="url(#f)"/>
+    <path d="M12.245 33.194a16.036 16.036 0 0 0 10.196 9.135c-1.575-2.18-2.659-5.464-3.226-9.135h-6.97ZM18.744 27c0-1.387.077-2.774.212-4.129h-7.401a16.137 16.137 0 0 0-.555 4.13c0 1.431.207 2.806.555 4.128h7.395A43.662 43.662 0 0 1 18.744 27ZM22.435 11.671a16.026 16.026 0 0 0-10.19 9.136h6.97c.561-3.671 1.645-6.955 3.22-9.136Z" fill="#F7B731"/>
+    <circle opacity=".1" cx="26.5" cy="26.5" r="26.5" fill="#F7B731"/>
+</svg>

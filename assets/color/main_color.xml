@@ -1,0 +1,15 @@
+<xml>
+    <color name="primaryColor">#EC2028</color>
+    <color name="textColor">#1E272E</color>
+    <color name="fbColor">#3B5998</color>
+    <color name="twColor">#1DA1F2</color>
+    <color name="backgroundScreen">#FFFFFF</color>
+    <color name="greyDivider">#F1F2F6</color>
+    <color name="gradientHome1">#E52D27</color>
+    <color name="gradientHome2">#B31217</color>
+    <color name="yellowBg">#F7B731</color>
+    <color name="graySearch">#F1F2F6</color>
+    <color name="grayText">#A4B0BE</color>
+    <color name="greyDivider1">#CED6E0</color>
+    <color name="dartGreyText">#747D8C</color>
+</xml>
