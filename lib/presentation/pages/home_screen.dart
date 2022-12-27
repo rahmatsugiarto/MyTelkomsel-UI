@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_telkomsel_ui/dummy/data_dummy.dart';
 import 'package:my_telkomsel_ui/resources/assets.gen.dart';
 
 import '../../app_routes.dart';
@@ -365,29 +366,24 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: 100,
                           width: double.infinity,
-                          child: ListView(
+                          child: ListView.builder(
                             physics: const BouncingScrollPhysics(),
                             shrinkWrap: true,
+                            padding: const EdgeInsets.only(left: 20, right: 10),
                             scrollDirection: Axis.horizontal,
-                            children: [
-                              const SizedBox(width: 20.0),
-                              Container(
+                            itemCount: DataDummmy.terbaruDariTelkomsel.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final data =
+                                  DataDummmy.terbaruDariTelkomsel[index];
+                              return Container(
                                 margin: const EdgeInsets.only(right: 10),
                                 child: Image.asset(
-                                  Assets.images_terbaru_1.path,
+                                  data.image,
                                   height: 100,
                                   width: 248,
                                 ),
-                              ),
-                              Container(
-                                margin: const EdgeInsets.only(right: 10),
-                                child: Image.asset(
-                                  Assets.images_terbaru_2.path,
-                                  height: 100,
-                                  width: 248,
-                                ),
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
                         const SizedBox(height: 30.0),
@@ -399,38 +395,21 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: 180,
                           width: double.infinity,
-                          child: ListView(
+                          child: ListView.builder(
                             physics: const BouncingScrollPhysics(),
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
-                            children: [
-                              const SizedBox(width: 20.0),
-                              CardItemHome(
-                                image: Assets.images_tanggap_1.path,
-                                title:
-                                    "Diskon Spesial 25% Untuk Pelanggan Baru",
+                            padding: const EdgeInsets.only(left: 20, right: 10),
+                            itemCount: DataDummmy.tanggapCovid.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final data = DataDummmy.tanggapCovid[index];
+                              return CardItemHome(
+                                image: data.image,
+                                title: data.message,
                                 heightImage: 112,
                                 widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_tanggap_2.path,
-                                title: "Bebas Kuota Akses Layanan Kesehatan",
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_tanggap_3.path,
-                                title: "Telkomsel #TerusBergerakMaju ...",
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_tanggap_4.path,
-                                title: "#DiRumahTerusProduktif",
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
                         const SizedBox(height: 30.0),
@@ -453,31 +432,21 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: 140,
                           width: double.infinity,
-                          child: ListView(
+                          child: ListView.builder(
+                            padding: const EdgeInsets.only(left: 20, right: 10),
                             physics: const BouncingScrollPhysics(),
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
-                            children: [
-                              const SizedBox(width: 20.0),
-                              CardItemHome(
-                                image: Assets.images_ayo_1.path,
-                                title: 'Bayar Serba Cepat',
+                            itemCount: DataDummmy.ayokPakeLinkAja.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final data = DataDummmy.ayokPakeLinkAja[index];
+                              return CardItemHome(
+                                image: data.image,
+                                title: data.message,
                                 heightImage: 96,
                                 widthCard: 145,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_ayo_2.path,
-                                title: 'Cukup Snap QR',
-                                heightImage: 96,
-                                widthCard: 145,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_ayo_3.path,
-                                title: 'NO! Credit Card',
-                                heightImage: 96,
-                                widthCard: 145,
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
                         const SizedBox(height: 30.0),
@@ -489,39 +458,21 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: 175,
                           width: double.infinity,
-                          child: ListView(
+                          child: ListView.builder(
+                            padding: const EdgeInsets.only(left: 20, right: 10),
                             physics: const BouncingScrollPhysics(),
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
-                            children: [
-                              const SizedBox(width: 20.0),
-                              CardItemHome(
-                                image: Assets.images_voucher_1.path,
-                                title: 'Double Benefits from DOUBLE UNTUNG',
+                            itemCount: DataDummmy.cariVouhcer.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final data = DataDummmy.cariVouhcer[index];
+                              return CardItemHome(
+                                image: data.image,
+                                title: data.message,
                                 heightImage: 112,
                                 widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_voucher_2.path,
-                                title: 'Join Undi-Undi Hepi 2020!',
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_voucher_3.path,
-                                title:
-                                    'Get Samsung Galaxy S20 Series with Best kartuHalo ...',
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_voucher_4.path,
-                                title:
-                                    'Get Samsung Galaxy S20 Series with Best kartuHalo ...',
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
                         const SizedBox(height: 30.0),
@@ -533,27 +484,21 @@ class HomeScreen extends StatelessWidget {
                         SizedBox(
                           height: 175,
                           width: double.infinity,
-                          child: ListView(
+                          child: ListView.builder(
+                            padding: const EdgeInsets.only(left: 20, right: 10),
                             physics: const BouncingScrollPhysics(),
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
-                            children: [
-                              const SizedBox(width: 20.0),
-                              CardItemHome(
-                                image: Assets.images_penawaran_1.path,
-                                title:
-                                    'Terus Belajar dari Rumahmu dengan Ruangguru!',
+                            itemCount: DataDummmy.penawaranKhusus.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final data = DataDummmy.penawaranKhusus[index];
+                              return CardItemHome(
+                                image: data.image,
+                                title: data.message,
                                 heightImage: 112,
                                 widthCard: 248,
-                              ),
-                              CardItemHome(
-                                image: Assets.images_penawaran_2.path,
-                                title:
-                                    'Belajar Kini Makin Mudah dengan Paket ilmupedia!',
-                                heightImage: 112,
-                                widthCard: 248,
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
                       ],

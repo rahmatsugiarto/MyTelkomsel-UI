@@ -1,4 +1,74 @@
+import '../resources/assets.gen.dart';
+
 class DataDummmy {
+  static List<BannerModel> terbaruDariTelkomsel = [
+    BannerModel(image: Assets.images_terbaru_1.path, message: ""),
+    BannerModel(image: Assets.images_terbaru_2.path, message: ""),
+  ];
+
+  static List<BannerModel> tanggapCovid = [
+    BannerModel(
+      image: Assets.images_tanggap_1.path,
+      message: "Diskon Spesial 25% Untuk Pelanggan Baru",
+    ),
+    BannerModel(
+      image: Assets.images_tanggap_2.path,
+      message: "Bebas Kuota Akses Layanan Kesehatan",
+    ),
+    BannerModel(
+      image: Assets.images_tanggap_3.path,
+      message: "Telkomsel #TerusBergerakMaju ...",
+    ),
+    BannerModel(
+      image: Assets.images_tanggap_4.path,
+      message: "#DiRumahTerusProduktif",
+    ),
+  ];
+
+  static List<BannerModel> ayokPakeLinkAja = [
+    BannerModel(
+      image: Assets.images_ayo_1.path,
+      message: "Bayar Serba Cepat",
+    ),
+    BannerModel(
+      image: Assets.images_ayo_2.path,
+      message: "Cukup Snap QR",
+    ),
+    BannerModel(
+      image: Assets.images_ayo_3.path,
+      message: "NO! Credit Card",
+    ),
+  ];
+
+  static List<BannerModel> cariVouhcer = [
+    BannerModel(
+      image: Assets.images_voucher_1.path,
+      message: "Double Benefits from DOUBLE UNTUNG",
+    ),
+    BannerModel(
+      image: Assets.images_voucher_2.path,
+      message: "Join Undi-Undi Hepi 2020!",
+    ),
+    BannerModel(
+      image: Assets.images_voucher_3.path,
+      message: "Get Samsung Galaxy S20 Series with Best kartuHalo ...",
+    ),
+    BannerModel(
+      image: Assets.images_voucher_4.path,
+      message: "Get Samsung Galaxy S20 Series with Best kartuHalo ...",
+    ),
+  ];
+  static List<BannerModel> penawaranKhusus = [
+    BannerModel(
+      image: Assets.images_penawaran_1.path,
+      message: "Terus Belajar dari Rumahmu dengan Ruangguru!",
+    ),
+    BannerModel(
+      image: Assets.images_penawaran_2.path,
+      message: "Belajar Kini Makin Mudah dengan Paket ilmupedia!",
+    ),
+  ];
+
   static List<PaketModel> paketLangganan = [
     PaketModel(
       namaPaket: "Internet OMG!",
@@ -191,5 +261,15 @@ class PaketModel {
     required this.hargaNormal,
     required this.hargaPromo,
     required this.kuota,
+  });
+}
+
+class BannerModel {
+  final String image;
+  final String message;
+
+  BannerModel({
+    required this.image,
+    required this.message,
   });
 }
