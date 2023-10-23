@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                                       Row(
                                         children: [
                                           Text(
-                                            "082126798441",
+                                            "0821********",
                                             style: GoogleFonts.openSans(
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
@@ -250,9 +250,9 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Container(
                           margin: const EdgeInsets.fromLTRB(20, 13, 20, 13),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
+                            children: [
                               StatusCard(
                                 title: "Internet",
                                 data: "12.19",
